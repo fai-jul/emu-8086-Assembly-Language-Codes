@@ -1,0 +1,17 @@
+
+
+org 100h
+mov dx,0
+mov cx,8
+mov al,01000001b
+count:
+shr al,1 
+jc skip
+inc dx
+skip:
+loop count
+
+ret
+
+
+
